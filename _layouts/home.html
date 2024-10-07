@@ -28,7 +28,7 @@ endif %} {% assign normal_end = normal_start | plus: normal_size | minus: 1 %}
 all_normal[i] %} {% endfor %} {% endif %}
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
-  {% for post in posts %}
+  {% for post in site.posts %}
   <article class="card-wrapper card">
     <a
       href="{{ post.url | relative_url }}"
