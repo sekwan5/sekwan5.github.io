@@ -34,6 +34,8 @@ jobs:
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
+      - name: Install Sass
+     run: gem install sass-embedded
 
       - name: Setup Pages
         id: pages
@@ -49,7 +51,7 @@ jobs:
         run: bundle install
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}" --trace
         env:
           JEKYLL_ENV: "production"
 
