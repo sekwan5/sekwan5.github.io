@@ -39,9 +39,6 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
-      - name: Install Sass
-        run: gem install sass-embedded
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
