@@ -13,3 +13,5 @@ end
 
 gem 'wdm', '>= 0.2.0' if Gem.win_platform?
 gem 'bootstrap', '~> 5.0'
+gem 'jekyll-sass-converter'
+gem 'sass-embedded'
